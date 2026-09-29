@@ -15,11 +15,19 @@ Table "transaksi" {
   updated_at timestamp
 }
 
-Table "user" {
-  id int [pk, increment]
-  username varchar(255)
-  password varchar(255)
-  email varchar(255)
-  created_at timestamp
-  updated_at timestamp
+Table "nama_pelanggan"{
+  "id_pelanggan" int [pk, ref: > pelanggan.id_pelanggan]
+  "nama_depan" string(50)
+  "nama_tengah" string(50)
+  "nama_belakang" string(50)
+}
+
+
+Table "pelanggan"{
+  "id_pelanggan" int [pk, increment]
+  "alamat" string(100)
+  "no_hp" string(15)
+  "email" string(50)
+  "tanggal_lahir" date
+  "jenis_kelamin" enum('L', 'P')
 }
