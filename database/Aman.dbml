@@ -1,0 +1,25 @@
+Table "rekening" {
+  id int [pk, increment]
+  nama varchar(255)
+  nomor varchar(255)
+  saldo decimal(10,2)
+  created_at timestamp
+  updated_at timestamp
+}
+Table "transaksi" {
+  id int [pk, increment]
+  rekening_id int [ref: > rekening.id]
+  tipe enum('debit', 'kredit')
+  jumlah decimal(10,2)
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table "user" {
+  id int [pk, increment]
+  username varchar(255)
+  password varchar(255)
+  email varchar(255)
+  created_at timestamp
+  updated_at timestamp
+}
