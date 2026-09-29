@@ -1,4 +1,4 @@
-# 🦅 EAGLE BOYS
+# 🦅 EAGLE BOYS with AMAN AJA
 
 <p align="center">
   <strong>⚡ BUILD. INNOVATE. SOAR. ⚡</strong>
@@ -16,13 +16,13 @@
 
 ---
 
-## 🦅 About EAGLE BOYS
+## 🦅 About EAGLE BOYS with AMAN AJA
 
-**EAGLE BOYS** adalah sebuah tim dan ekosistem pengembangan teknologi yang berfokus pada **Artificial Intelligence, Software Development, dan inovasi digital**.
+**EAGLE BOYS with AMAN AJA** adalah sebuah tim dan ekosistem pengembangan teknologi yang berfokus pada **Artificial Intelligence, Software Development, dan inovasi digital**.
 
 Kami percaya bahwa teknologi bukan hanya tentang membuat sesuatu bekerja, tetapi tentang menciptakan sesuatu yang **bermakna, scalable, dan mampu memberikan dampak nyata.**
 
-> **EAGLE** melambangkan visi untuk melihat lebih jauh, bergerak lebih cepat, dan terus berkembang.
+> **EAGLE & AMAN AJA** melambangkan visi untuk melihat lebih jauh, bergerak lebih cepat, dan terus berkembang.
 
 ### 🎯 Our Mission
 
@@ -32,185 +32,3 @@ Kami percaya bahwa teknologi bukan hanya tentang membuat sesuatu bekerja, tetapi
 * 🧠 Mendorong eksplorasi teknologi modern
 * 🌎 Menciptakan teknologi yang bermanfaat bagi banyak orang
 
----
-
-## ⚡ What We Build
-
-<table>
-<tr>
-<td width="50%">
-
-### 🤖 Artificial Intelligence
-
-Membangun sistem AI yang dapat membantu manusia bekerja, belajar, dan mengambil keputusan dengan lebih efektif.
-
-</td>
-<td width="50%">
-
-### 💻 Software Development
-
-Mengembangkan aplikasi modern dengan arsitektur yang scalable, clean, dan mudah dikembangkan.
-
-</td>
-</tr>
-
-<tr>
-<td width="50%">
-
-### 🌐 Web Technology
-
-Membangun pengalaman web yang cepat, modern, responsive, dan user-friendly.
-
-</td>
-<td width="50%">
-
-### 🚀 Digital Innovation
-
-Mengubah masalah nyata menjadi peluang melalui teknologi dan kreativitas.
-
-</td>
-</tr>
-</table>
-
----
-
-## 🛠️ Technology Stack
-
-<p align="center">
-
-<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
-<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
-<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
-<img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
-
-</p>
-
----
-
-## 🧠 Our Philosophy
-
-```text
-                 🦅
-              EAGLE BOYS
-                  │
-       ┌──────────┼──────────┐
-       │          │          │
-     THINK      BUILD      IMPACT
-       │          │          │
-       └──────────┼──────────┘
-                  │
-              🚀 SOAR
-```
-
-Kami tidak hanya ingin mengikuti perkembangan teknologi.
-
-**Kami ingin ikut membangunnya.**
-
----
-
-## 🔥 Why EAGLE?
-
-| Principle          | Meaning                                                             |
-| ------------------ | ------------------------------------------------------------------- |
-| 🧠 **Think**       | Berpikir kritis dan melihat masalah dari perspektif yang lebih luas |
-| ⚡ **Build**        | Mengubah ide menjadi sesuatu yang benar-benar bisa digunakan        |
-| 🚀 **Innovate**    | Berani mencoba teknologi dan pendekatan baru                        |
-| 🤝 **Collaborate** | Bertumbuh bersama melalui kolaborasi                                |
-| 🦅 **Soar**        | Selalu berkembang dan menargetkan sesuatu yang lebih tinggi         |
-
----
-
-## 👥 EAGLE BOYS
-
-> **We are not just coding.
-> We are building the future.**
-
-EAGLE BOYS dibangun dari rasa ingin tahu, keberanian untuk mencoba, dan semangat untuk terus berkembang.
-
-Setiap project adalah kesempatan untuk belajar.
-
-Setiap bug adalah tantangan.
-
-Setiap ide adalah kemungkinan baru.
-
----
-
-## 🚀 Getting Started
-
-Clone repository:
-
-```bash
-git clone https://github.com/your-username/eagle-boys.git
-```
-
-Masuk ke directory:
-
-```bash
-cd eagle-boys
-```
-
-Install dependencies:
-
-```bash
-composer install
-npm install
-```
-
-Copy environment:
-
-```bash
-cp .env.example .env
-```
-
-Generate application key:
-
-```bash
-php artisan key:generate
-```
-
-Run development server:
-
-```bash
-php artisan serve
-```
-
-Untuk frontend:
-
-```bash
-npm run dev
-```
-
----
-
-## 📈 Vision
-
-EAGLE BOYS memiliki visi untuk membangun ekosistem teknologi yang menggabungkan:
-
-**AI × Software × Creativity × Human Potential**
-
-Karena teknologi terbaik bukan yang paling kompleks.
-
-Tetapi teknologi yang mampu membuat manusia menjadi **lebih mampu**.
-
----
-
-<p align="center">
-
-### 🦅 EAGLE BOYS
-
-**Think Higher. Build Smarter. Soar Further.**
-
-<br>
-
-⭐ If you like this project, consider giving it a star!
-
-</p>
-
----
-
-<p align="center">
-  <sub>Built with curiosity, caffeine, and countless lines of code. ☕💻</sub>
-</p>
