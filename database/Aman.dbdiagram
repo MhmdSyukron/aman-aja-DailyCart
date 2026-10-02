@@ -1,0 +1,278 @@
+{
+  "version": "3.0.0",
+  "darkMode": true,
+  "gridEnabling": false,
+  "currentViewName": null,
+  "defaultView": {
+    "detailLevel": "All",
+    "relationshipMode": "All",
+    "tablePositions": [
+      {
+        "name": "pengguna",
+        "schemaName": "public",
+        "x": 376.40498046875,
+        "y": 584
+      },
+      {
+        "name": "kategori",
+        "schemaName": "public",
+        "x": 376.40498046875,
+        "y": 12
+      },
+      {
+        "name": "produk",
+        "schemaName": "public",
+        "x": 943.8138671874999,
+        "y": 12
+      },
+      {
+        "name": "supplier",
+        "schemaName": "public",
+        "x": 376.40498046875,
+        "y": 250
+      },
+      {
+        "name": "transaksi_pembelian",
+        "schemaName": "public",
+        "x": 943.8138671874999,
+        "y": 378
+      },
+      {
+        "name": "detail_pembelian",
+        "schemaName": "public",
+        "x": 1733.7043739744354,
+        "y": 9.481284533342375
+      },
+      {
+        "name": "transaksi_penjualan",
+        "schemaName": "public",
+        "x": 943.8138671874999,
+        "y": 744
+      },
+      {
+        "name": "detail_penjualan",
+        "schemaName": "public",
+        "x": 1558.4888090869922,
+        "y": 293.61370621300625
+      },
+      {
+        "name": "pengiriman",
+        "schemaName": "public",
+        "x": 1709.4248679111647,
+        "y": 567.2168630693384
+      },
+      {
+        "name": "pengeluaran_operasional",
+        "schemaName": "public",
+        "x": 761.5103410258017,
+        "y": 1106.4641068769633
+      },
+      {
+        "name": "promo",
+        "schemaName": "public",
+        "x": 12,
+        "y": 12
+      }
+    ],
+    "tableGroupCollapseStates": [],
+    "stickyNoteLayouts": [],
+    "referencePaths": [
+      {
+        "firstFieldNames": [
+          "id_kategori"
+        ],
+        "firstTableName": "kategori",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_kategori"
+        ],
+        "secondTableName": "produk",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_supplier"
+        ],
+        "firstTableName": "supplier",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_supplier"
+        ],
+        "secondTableName": "transaksi_pembelian",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_pengguna"
+        ],
+        "firstTableName": "pengguna",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_pengguna"
+        ],
+        "secondTableName": "transaksi_pembelian",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_pembelian"
+        ],
+        "firstTableName": "transaksi_pembelian",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_pembelian"
+        ],
+        "secondTableName": "detail_pembelian",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_produk"
+        ],
+        "firstTableName": "produk",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_produk"
+        ],
+        "secondTableName": "detail_pembelian",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_pengguna"
+        ],
+        "firstTableName": "pengguna",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_pelanggan"
+        ],
+        "secondTableName": "transaksi_penjualan",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_pengguna"
+        ],
+        "firstTableName": "pengguna",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_kasir"
+        ],
+        "secondTableName": "transaksi_penjualan",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_penjualan"
+        ],
+        "firstTableName": "transaksi_penjualan",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_penjualan"
+        ],
+        "secondTableName": "detail_penjualan",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_produk"
+        ],
+        "firstTableName": "produk",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_produk"
+        ],
+        "secondTableName": "detail_penjualan",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_penjualan"
+        ],
+        "firstTableName": "transaksi_penjualan",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_penjualan"
+        ],
+        "secondTableName": "pengiriman",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_pengguna"
+        ],
+        "firstTableName": "pengguna",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_kurir"
+        ],
+        "secondTableName": "pengiriman",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_pengguna"
+        ],
+        "firstTableName": "pengguna",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_pengguna"
+        ],
+        "secondTableName": "pengeluaran_operasional",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "id_promo"
+        ],
+        "firstTableName": "promo",
+        "firstSchemaName": "public",
+        "firstRelation": "1",
+        "secondFieldNames": [
+          "id_promo"
+        ],
+        "secondTableName": "transaksi_penjualan",
+        "secondSchemaName": "public",
+        "secondRelation": "*",
+        "checkPoints": []
+      }
+    ]
+  },
+  "views": {}
+}

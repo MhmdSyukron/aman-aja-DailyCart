@@ -1,33 +1,101 @@
-Table "rekening" {
-  id int [pk, increment]
-  nama varchar(255)
-  nomor varchar(255)
-  saldo decimal(10,2)
-  created_at timestamp
-  updated_at timestamp
-}
-Table "transaksi" {
-  id int [pk, increment]
-  rekening_id int [ref: > rekening.id]
-  tipe enum('debit', 'kredit')
-  jumlah decimal(10,2)
-  created_at timestamp
-  updated_at timestamp
+Table pengguna {
+  id_pengguna int [pk, increment]
+  nama_lengkap varchar(100) [not null]
+  username varchar(50) [unique, not null]
+  password varchar(255) [not null]
+  peran varchar(30) [not null, note: 'pemilik, admin, kasir, pelanggan, kurir']
+  no_telepon varchar(20)
+  alamat text
 }
 
-Table "nama_pelanggan"{
-  "id_pelanggan" int [pk, ref: > pelanggan.id_pelanggan]
-  "nama_depan" string(50)
-  "nama_tengah" string(50)
-  "nama_belakang" string(50)
+Table kategori {
+  id_kategori int [pk, increment]
+  nama_kategori varchar(100) [not null]
+  deskripsi text
 }
 
+Table produk {
+  id_produk int [pk, increment]
+  id_kategori int [ref: > kategori.id_kategori, not null]
+  nama_produk varchar(150) [not null]
+  harga_beli decimal(12,2) [not null]
+  harga_jual decimal(12,2) [not null]
+  stok int [not null, default: 0]
+  stok_minimum int [not null, default: 5, note: 'ambang batas peringatan stok menipis']
+  deskripsi text
+}
 
-Table "pelanggan"{
-  "id_pelanggan" int [pk, increment]
-  "alamat" string(100)
-  "no_hp" string(15)
-  "email" string(50)
-  "tanggal_lahir" date
-  "jenis_kelamin" enum('L', 'P')
+Table supplier {
+  id_supplier int [pk, increment]
+  nama_supplier varchar(150) [not null]
+  kontak varchar(50) [not null]
+  alamat text
+  informasi_pemasok text
+}
+
+Table promo {
+  id_promo int [pk, increment]
+  kode_promo varchar(50) [unique, not null]
+  nama_promo varchar(100) [not null]
+  potongan decimal(12,2) [not null]
+  tanggal_mulai date [not null]
+  tanggal_selesai date [not null]
+  status_aktif varchar(20) [not null, default: 'aktif']
+}
+
+Table transaksi_penjualan {
+  id_penjualan int [pk, increment]
+  nomor_transaksi varchar(50) [unique, not null]
+  tanggal_penjualan datetime [not null]
+  id_pelanggan int [ref: > pengguna.id_pengguna, not null]
+  id_kasir int [ref: > pengguna.id_pengguna, note: 'admin/kasir pencatat transaksi']
+  id_promo int [ref: > promo.id_promo, null]
+  total_pembayaran decimal(12,2) [not null]
+  status_transaksi varchar(30) [not null, default: 'selesai', note: 'proses, selesai, batal']
+}
+
+Table detail_penjualan {
+  id_detail_penjualan int [pk, increment]
+  id_penjualan int [ref: > transaksi_penjualan.id_penjualan, not null]
+  id_produk int [ref: > produk.id_produk, not null]
+  jumlah int [not null]
+  harga_satuan decimal(12,2) [not null]
+  subtotal decimal(12,2) [not null]
+}
+
+Table transaksi_pembelian {
+  id_pembelian int [pk, increment]
+  nomor_transaksi varchar(50) [unique, not null]
+  tanggal_pembelian datetime [not null]
+  id_supplier int [ref: > supplier.id_supplier, not null]
+  id_pengguna int [ref: > pengguna.id_pengguna, not null, note: 'admin pencatat pembelian']
+  total_biaya decimal(12,2) [not null]
+}
+
+Table detail_pembelian {
+  id_detail_pembelian int [pk, increment]
+  id_pembelian int [ref: > transaksi_pembelian.id_pembelian, not null]
+  id_produk int [ref: > produk.id_produk, not null]
+  jumlah int [not null]
+  harga_beli_satuan decimal(12,2) [not null]
+  subtotal decimal(12,2) [not null]
+}
+
+Table pengiriman {
+  id_pengiriman int [pk, increment]
+  id_penjualan int [ref: > transaksi_penjualan.id_penjualan, not null]
+  id_kurir int [ref: > pengguna.id_pengguna, note: 'kurir bertugas']
+  alamat_tujuan text [not null]
+  nomor_resi varchar(50)
+  tanggal_kirim datetime
+  status_pengiriman varchar(30) [not null, default: 'diproses', note: 'diproses, dikirim, terkirim, gagal']
+}
+
+Table pengeluaran_operasional {
+  id_pengeluaran int [pk, increment]
+  id_pengguna int [ref: > pengguna.id_pengguna, not null, note: 'pencatat pengeluaran']
+  tanggal_pengeluaran date [not null]
+  jenis_pengeluaran varchar(100) [not null, note: 'listrik, sewa, gaji, operasional']
+  nominal decimal(12,2) [not null]
+  keterangan text [not null]
 }
