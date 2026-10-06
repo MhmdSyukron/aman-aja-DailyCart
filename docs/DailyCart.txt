@@ -1,0 +1,72 @@
+Nama tim/domain	: DailyCart.
+Tgl			: 23/09/2026
+Versi 			: 2.26
+
+1.	Konteks bisnis
+•	Deskripsi usaha	: DailyCart adalah toko online yang menjual berbagai macam barang dari berbagai kategori, seperti pakaian, aksesoris, gadget, sparepart, perlengkapan rumah, dan barang kebutuhan lainnya.
+•	Tujuan platform bagi usaha ini : Menyediakan platform penjualan yang memudahkan pengelola dalam mencatat transaksi jual-beli, mengelola produk dan stok barang, serta membantu pemilik usaha memantau laporan penjualan, produk terlaris, dan kondisi keuangan berupa laba dan rugi.
+2.	Pemangku kegiatan
+•	Pemilik usaha		: kebutuhan utama untuk memantau penjualan, produk, stok, dan laporan transaksi
+•	Admin/kasir/operator	: kebutuhan utama untuk mengelola produk, stok, pesanan, promo, dan transaksi pelanggan
+•	Pelanggan 		: kebutuhan utama untuk mencari produk, melihat informasi barang, melakukan pembelian, dan memantau pesanan.
+•	Kurir/pihak pengiriman : utama untuk memperoleh informasi pengiriman dan tujuan pesanan
+3.	Kebutuhan fungsional
+•	FR-01: Sistem harus dapat mencatat transaksi penjualan barang, meliputi nama barang, jumlah, harga, dan total pembayaran.
+•	FR-02: Sistem harus dapat mencatat transaksi pembelian atau penambahan barang dari supplier.
+•	FR-03: Sistem harus dapat mengelola data produk, meliputi nama barang, kategori, harga beli, dan harga jual.
+•	FR-04: Sistem harus dapat memperbarui stok barang secara otomatis berdasarkan transaksi penjualan dan pembelian.
+•	FR-05: Sistem harus dapat menampilkan informasi ketersediaan stok setiap barang serta memberikan peringatan ketika stok menipis atau habis.
+•	FR-06: Sistem harus dapat menampilkan laporan penjualan berdasarkan periode harian, mingguan, dan bulanan.
+•	FR-07: Sistem harus dapat menampilkan laporan produk terlaris (best seller) berdasarkan jumlah barang yang terjual.
+•	FR-08: Sistem harus dapat menampilkan laporan pembelian barang beserta jumlah dan total biaya pembelian.
+•	FR-09: Sistem harus dapat menampilkan laporan kondisi keuangan usaha berupa laba dan rugi berdasarkan pendapatan dan pengeluaran.
+•	FR-10: Sistem harus dapat menyimpan, melihat, dan mencari riwayat transaksi penjualan dan pembelian.
+•	FR-11: Sistem harus dapat mencatat pengeluaran operasional usaha, seperti biaya listrik, sewa, dan biaya lainnya.
+•	FR-12: Sistem harus dapat mencetak atau menghasilkan nota transaksi penjualan sebagai bukti pembayaran pelanggan.
+•	FR-13: Sistem harus dapat mengelola data supplier, meliputi nama supplier, kontak, dan informasi pemasok barang.
+
+4.	Kebutuhan Non-fungsional
+•	NFR-01: Sistem harus memiliki tampilan yang sederhana dan mudah digunakan oleh kasir maupun pemilik usaha.
+•	NFR-02: Sistem harus dapat memproses transaksi dan menampilkan laporan dengan waktu respons yang cepat.
+•	NFR-03: Sistem harus menjaga keamanan data transaksi dan laporan keuangan dari akses pihak yang tidak berwenang.
+•	NFR-04: Sistem harus menyimpan data transaksi dan stok secara konsisten agar tidak mudah hilang atau berubah tanpa proses yang sesuai.
+•	NFR-05: Sistem harus menghasilkan laporan penjualan, stok, dan laba rugi dengan perhitungan yang akurat berdasarkan data yang tersimpan.
+5.	Aturan Bisnis
+•	BR-01: Setiap transaksi penjualan dan pembelian harus dicatat dalam sistem agar data stok dan laporan dapat diperbarui secara otomatis.
+•	 BR-02: Setiap produk harus memiliki nama barang, kategori, harga beli, harga jual, dan jumlah stok.
+•	BR-03: Transaksi penjualan hanya dapat dilakukan apabila stok barang mencukupi jumlah yang dibeli pelanggan.
+•	BR-04: Transaksi penjualan akan mengurangi stok, sedangkan transaksi pembelian akan menambah stok sesuai jumlah barang.
+•	BR-05: Setiap transaksi harus memiliki nomor transaksi yang unik untuk memudahkan pencarian dan menghindari duplikasi data.
+•	BR-06: Laporan laba rugi dihitung berdasarkan pendapatan penjualan dikurangi harga pokok barang yang terjual dan biaya operasional usaha.
+•	BR-07: Setiap pengeluaran operasional harus dicatat berdasarkan nominal, tanggal, dan keterangan agar dapat digunakan dalam laporan keuangan.
+
+
+6.	Asumsi & Pertanyaan Terbuka
+Asumsi : 
+• DailyCart digunakan oleh pemilik usaha, admin/kasir/operator, pelanggan, dan kurir sesuai kebutuhan masing-masing.
+• Data produk, stok, transaksi, supplier, pengeluaran, dan laporan disimpan di dalam sistem.
+• Stok barang diperbarui secara otomatis setelah transaksi penjualan atau pembelian.
+• Laporan penjualan dan keuangan dibuat berdasarkan data transaksi yang tersimpan di sistem.
+Perlu klarifikasi :
+• Metode pembayaran apa saja yang akan digunakan pelanggan?
+• Apakah sistem perlu menangani pembatalan atau pengembalian barang?
+• Bagaimana mekanisme promo yang akan diterapkan pada produk?
+• Apakah sistem terhubung langsung dengan jasa pengiriman/kurir?
+• Siapa yang memiliki hak untuk mengubah atau menghapus data transaksi yang sudah tersimpan?
+7.	Catatan Perubahan
+
+Belum ada perubahan
+
+
+
+
+
+
+
+
+
+
+
+8.	Skema entitas, atribut, tipe data atribut
+
+ https://drive.google.com/file/d/1O9lDV0odblUY4W33XqP6eF_rU5dk1AVf/view?usp=sharing
