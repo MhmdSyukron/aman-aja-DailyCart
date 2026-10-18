@@ -11,21 +11,25 @@ class TransaksiPembelian extends Model
 
     // @dbml-sync:table-property
     protected $table = 'transaksi_pembelian';
+
+    protected $primaryKey = 'id_pembelian';
+
+    public $timestamps = false;
     // @enddbml-sync:table-property
 
     // @dbml-sync:fillable
     protected $fillable = [
         'nomor_transaksi',
-		'tanggal_pembelian',
-		'id_supplier',
-		'id_pengguna',
-		'total_biaya'
+        'tanggal_pembelian',
+        'id_supplier',
+        'id_pengguna',
+        'total_biaya',
     ];
     // @enddbml-sync:fillable
 
     // @dbml-sync:casts
     protected $casts = [
-        'tanggal_pembelian' => 'datetime'
+        'tanggal_pembelian' => 'datetime',
     ];
     // @enddbml-sync:casts
 

@@ -11,33 +11,37 @@ class TransaksiPenjualan extends Model
 
     // @dbml-sync:table-property
     protected $table = 'transaksi_penjualan';
+
+    protected $primaryKey = 'id_penjualan';
+
+    public $timestamps = false;
     // @enddbml-sync:table-property
 
     // @dbml-sync:fillable
     protected $fillable = [
         'nomor_transaksi',
-		'tanggal_penjualan',
-		'id_pelanggan',
-		'id_kasir',
-		'id_promo',
-		'total_pembayaran',
-		'status_transaksi'
+        'tanggal_penjualan',
+        'id_pelanggan',
+        'id_kasir',
+        'id_promo',
+        'total_pembayaran',
+        'status_transaksi',
     ];
     // @enddbml-sync:fillable
 
     // @dbml-sync:casts
     protected $casts = [
-        'tanggal_penjualan' => 'datetime'
+        'tanggal_penjualan' => 'datetime',
     ];
     // @enddbml-sync:casts
 
     // @dbml-sync:relations
-    public function pengguna()
+    public function pelanggan()
     {
         return $this->belongsTo(Pengguna::class, 'id_pelanggan', 'id_pengguna');
     }
 
-    public function pengguna()
+    public function kasir()
     {
         return $this->belongsTo(Pengguna::class, 'id_kasir', 'id_pengguna');
     }

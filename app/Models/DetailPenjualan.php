@@ -11,21 +11,25 @@ class DetailPenjualan extends Model
 
     // @dbml-sync:table-property
     protected $table = 'detail_penjualan';
+
+    protected $primaryKey = 'id_detail_penjualan';
+
+    public $timestamps = false;
     // @enddbml-sync:table-property
 
     // @dbml-sync:fillable
     protected $fillable = [
         'id_penjualan',
-		'id_produk',
-		'jumlah',
-		'harga_satuan',
-		'subtotal'
+        'id_produk',
+        'jumlah',
+        'harga_satuan',
+        'subtotal',
     ];
     // @enddbml-sync:fillable
 
     // @dbml-sync:casts
     protected $casts = [
-        
+
     ];
     // @enddbml-sync:casts
 

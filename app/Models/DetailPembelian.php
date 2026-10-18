@@ -11,21 +11,25 @@ class DetailPembelian extends Model
 
     // @dbml-sync:table-property
     protected $table = 'detail_pembelian';
+
+    protected $primaryKey = 'id_detail_pembelian';
+
+    public $timestamps = false;
     // @enddbml-sync:table-property
 
     // @dbml-sync:fillable
     protected $fillable = [
         'id_pembelian',
-		'id_produk',
-		'jumlah',
-		'harga_beli_satuan',
-		'subtotal'
+        'id_produk',
+        'jumlah',
+        'harga_beli_satuan',
+        'subtotal',
     ];
     // @enddbml-sync:fillable
 
     // @dbml-sync:casts
     protected $casts = [
-        
+
     ];
     // @enddbml-sync:casts
 

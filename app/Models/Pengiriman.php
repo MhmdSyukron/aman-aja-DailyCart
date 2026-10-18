@@ -11,22 +11,26 @@ class Pengiriman extends Model
 
     // @dbml-sync:table-property
     protected $table = 'pengiriman';
+
+    protected $primaryKey = 'id_pengiriman';
+
+    public $timestamps = false;
     // @enddbml-sync:table-property
 
     // @dbml-sync:fillable
     protected $fillable = [
         'id_penjualan',
-		'id_kurir',
-		'alamat_tujuan',
-		'nomor_resi',
-		'tanggal_kirim',
-		'status_pengiriman'
+        'id_kurir',
+        'alamat_tujuan',
+        'nomor_resi',
+        'tanggal_kirim',
+        'status_pengiriman',
     ];
     // @enddbml-sync:fillable
 
     // @dbml-sync:casts
     protected $casts = [
-        'tanggal_kirim' => 'datetime'
+        'tanggal_kirim' => 'datetime',
     ];
     // @enddbml-sync:casts
 

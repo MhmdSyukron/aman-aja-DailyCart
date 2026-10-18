@@ -3,15 +3,14 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\DB;
 
-return new class extends Migration {
-
+return new class extends Migration
+{
     public function up()
     {
         Schema::create('produk', function (Blueprint $table) {
             $table->increments('id_produk')->nullable();
-            $table->integer('id_kategori');
+            $table->unsignedInteger('id_kategori');
             $table->foreign('id_kategori')->references('id_kategori')->on('kategori');
             $table->string('nama_produk');
             $table->string('harga_beli');

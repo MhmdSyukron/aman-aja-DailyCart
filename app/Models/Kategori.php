@@ -11,18 +11,22 @@ class Kategori extends Model
 
     // @dbml-sync:table-property
     protected $table = 'kategori';
+
+    protected $primaryKey = 'id_kategori';
+
+    public $timestamps = false;
     // @enddbml-sync:table-property
 
     // @dbml-sync:fillable
     protected $fillable = [
         'nama_kategori',
-		'deskripsi'
+        'deskripsi',
     ];
     // @enddbml-sync:fillable
 
     // @dbml-sync:casts
     protected $casts = [
-        
+
     ];
     // @enddbml-sync:casts
 

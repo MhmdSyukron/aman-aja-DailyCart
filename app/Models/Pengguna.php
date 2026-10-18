@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -12,22 +11,26 @@ class Pengguna extends Model
 
     // @dbml-sync:table-property
     protected $table = 'pengguna';
+
+    protected $primaryKey = 'id_pengguna';
+
+    public $timestamps = false;
     // @enddbml-sync:table-property
 
     // @dbml-sync:fillable
     protected $fillable = [
         'nama_lengkap',
-		'username',
-		'password',
-		'peran',
-		'no_telepon',
-		'alamat'
+        'username',
+        'password',
+        'peran',
+        'no_telepon',
+        'alamat',
     ];
     // @enddbml-sync:fillable
 
     // @dbml-sync:casts
     protected $casts = [
-        
+
     ];
     // @enddbml-sync:casts
 

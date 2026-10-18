@@ -11,20 +11,24 @@ class Supplier extends Model
 
     // @dbml-sync:table-property
     protected $table = 'supplier';
+
+    protected $primaryKey = 'id_supplier';
+
+    public $timestamps = false;
     // @enddbml-sync:table-property
 
     // @dbml-sync:fillable
     protected $fillable = [
         'nama_supplier',
-		'kontak',
-		'alamat',
-		'informasi_pemasok'
+        'kontak',
+        'alamat',
+        'informasi_pemasok',
     ];
     // @enddbml-sync:fillable
 
     // @dbml-sync:casts
     protected $casts = [
-        
+
     ];
     // @enddbml-sync:casts
 

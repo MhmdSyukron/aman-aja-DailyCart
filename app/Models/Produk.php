@@ -11,23 +11,27 @@ class Produk extends Model
 
     // @dbml-sync:table-property
     protected $table = 'produk';
+
+    protected $primaryKey = 'id_produk';
+
+    public $timestamps = false;
     // @enddbml-sync:table-property
 
     // @dbml-sync:fillable
     protected $fillable = [
         'id_kategori',
-		'nama_produk',
-		'harga_beli',
-		'harga_jual',
-		'stok',
-		'stok_minimum',
-		'deskripsi'
+        'nama_produk',
+        'harga_beli',
+        'harga_jual',
+        'stok',
+        'stok_minimum',
+        'deskripsi',
     ];
     // @enddbml-sync:fillable
 
     // @dbml-sync:casts
     protected $casts = [
-        
+
     ];
     // @enddbml-sync:casts
 
